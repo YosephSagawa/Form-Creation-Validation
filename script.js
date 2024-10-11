@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const email = document.getElementById('email').value.trim();
         const password = document.getElementById('password').value.trim();
 
-        const isValid = true;
+        let isValid = true;
         const messages = [];
 
         if(username.length < 3){
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
         if(password.length < 8){
             isValid = false;
-            messages.push('Passwrod must be atlease 8 characters long!');
+            messages.push('Password must be atlease 8 characters long!');
         }
 
         feedbackDiv.style.display = 'block';
